@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       
+        <link rel="stylesheet" href="form.css" />
+        <title>Healthy Eating</title>
+    </head>
+
+    <body>
+        <main>
+            <form id="survey-form" action="#" method="GET">
+                <header>
+                    <h1 id="title">Survey Form</h1>
+                    <div class="grid-columns">
+                        <p id="description">
+                            Our job at <strong>Healthy Eating</strong> is to map
+                            the eating habbits of the population.
+
+                            <span class="new-line">Please
+                            fill in the form below to help us with our work.</span>
+                        </p>
+                        <div class="col">
+                            <img src="https://th.bing.com/th/id/OIP.IEHm8O94ixr7beb0cEM7HwHaHa?pid=Api&rs=1"  alt="Icon" />
+                        </div>
+                    </div>
+                </header>
+
+                <div class="row">
+                    <section id="p-info">
+                        <h2>
+                            Personal information
+                        </h2>
+                        <label class="main-label" id="name-label" for="name"
+                            >Name</label
+                        >
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                        />
+                        <label class="main-label" id="email-label" for="email"
+                            >Email</label
+                        >
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Enter your e-mail"
+                            required
+                        />
+                        <div class="row">
+                            <div class="col">
+                                <label
+                                    class="main-label"
+                                    id="number-label"
+                                    for="number"
+                                    >Age</label
+                                >
+                                <input
+                                    type="number"
+                                    name="age"
+                                    id="number"
+                                    min="1"
+                                    max="100"
+                                    placeholder="Age"
+                                />
+                            </div>
+                            <div class="col">
+                                <label class="main-label" for="dropdown"
+                                    >Sex</label
+                                >
+                                <select name="sex" id="dropdown">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="eating-habits">
+                        <h2>Eating habits</h2>
+                        <div class="row">
+                            <fieldset class="fset-sub">
+                                <legend class="main-label legend-sub">
+                                    Meals per day
+                                </legend>
+                                <div class="option">
+                                    <input
+                                        id="meals-per-day-1"
+                                        type="radio"
+                                        name="meals-per-day"
+                                        value="1"
+                                    />
+                                    <label for="meals-per-day-1">One</label>
+                                </div>
+                                <div class="option">
+                                    <input
+                                        id="meals-per-day-2"
+                                        type="radio"
+                                        name="meals-per-day"
+                                        value="2"
+                                    />
+                                    <label for="meals-per-day-2">Two</label>
+                                </div>
+                                <div class="option">
+                                    <input
+                                        id="meals-per-day-3"
+                                        type="radio"
+                                        name="meals-per-day"
+                                        value="3"
+                                    />
+                                    <label for="meals-per-day-3">Tree</label>
+                                </div>
+                                <div class="option">
+                                    <input
+                                        id="meals-per-day-4"
+                                        type="radio"
+                                        name="meals-per-day"
+                                        value="4"
+                                    />
+                                    <label for="meals-per-day-4">Four</label>
+                                </div>
+                                <div class="option">
+                                    <input
+                                        id="meals-per-day-5"
+                                        type="radio"
+                                        name="meals-per-day"
+                                        value="5"
+                                    />
+                                    <label for="meals-per-day-5">Five</label>
+                                </div>
+                                <div class="option">
+                                    <input
+                                        id="meals-per-day-6"
+                                        type="radio"
+                                        name="meals-per-day"
+                                        value="6-or-more"
+                                    />
+                                    <label for="meals-per-day-6"
+                                        >Six or more</label
+                                    >
+                                </div>
+                            </fieldset>
+                            <fieldset class="fset-sub">
+                                <legend class="main-label legend-sub">
+                                    Meal composition
+                                </legend>
+                                <div class="option">
+                                    <input
+                                        id="meal-comp-1"
+                                        type="checkbox"
+                                        name="meal-content"
+                                        value="fruit-and-vegetables"
+                                    />
+                                    <label for="meal-comp-1"
+                                        >Fruit and vegetables</label
+                                    >
+                                </div>
+                                <div class="option">
+                                    <input
+                                        id="meal-comp-2"
+                                        type="checkbox"
+                                        name="meal-content"
+                                        value="meat"
+                                    />
+                                    <label for="meal-comp-2">Meat</label>
+                                </div>
+                                <div class="option">
+                                    <input
+                                        id="meal-comp-3"
+                                        type="checkbox"
+                                        name="meal-content"
+                                        value="tubers"
+                                    />
+                                    <label for="meal-comp-3">Tubers</label>
+                                </div>
+                                <div class="option">
+                                    <input
+                                        id="meal-comp-4"
+                                        type="checkbox"
+                                        name="meal-content"
+                                        value="dairy"
+                                    />
+                                    <label for="meal-comp-4"
+                                        >Dairy products</label
+                                    >
+                                </div>
+                                <div class="option">
+                                    <input
+                                        id="meal-comp-5"
+                                        type="checkbox"
+                                        name="meal-content"
+                                        value="grains"
+                                    />
+                                    <label for="meal-comp-5">Grains</label>
+                                </div>
+                                <div class="option">
+                                    <input
+                                        id="meal-comp-6"
+                                        type="checkbox"
+                                        name="meal-content"
+                                        value="sugar"
+                                    />
+                                    <label for="meal-comp-6">Sugar</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </section>
+                </div>
+
+                <section id="add-info">
+                    <h2>
+                        Additional information
+                    </h2>
+                    <label class="main-label" for="comments">Comments</label>
+                    <textarea
+                        name="comments"
+                        id="comments"
+                        cols="30"
+                        rows="10"
+                        placeholder="Enter your comment here..."
+                    ></textarea>
+                    <div class="row">
+                        <fieldset class="fset-sub">
+                            <legend class="main-label legend-sub">
+                                Newsletter
+                            </legend>
+                            <div class="option">
+                                <input
+                                    id="newsletter"
+                                    type="checkbox"
+                                    name="newsletter"
+                                    value="subscribe"
+                                />
+                                <label for="newsletter"
+                                    >Keep in touch with our newsletter</label
+                                >
+                            </div>
+                        </fieldset>
+                        <div class="col">
+                            <button id="submit" class="btn">Submit</button>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </main>
+    </body>
+</html>
